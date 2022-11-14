@@ -1,0 +1,46 @@
+.button {
+    border: none;
+
+    cursor: pointer;
+
+    &:hover{
+        opacity: 0.5;
+    }
+    
+    &:active{
+        opacity: 0.3;
+    }
+
+
+    &--circle {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        border-radius: 50%;
+
+        width: 54px;
+        height: 54px;
+
+        background-color: $royal-blue;
+
+
+
+        &::before,
+        &::after {
+            position: absolute;
+            content: "";
+
+            width: 2px;
+            height: 16px;
+
+            background-color: $white;
+        }
+
+        &::after{
+            transform: rotate(90deg)
+        }
+
+    }
+}

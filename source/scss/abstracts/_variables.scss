@@ -25,14 +25,14 @@ $font-family: $font-family-custom, $font-family-default;
 $font-weight-regular:400;
 $font-weight-medium:500;
 
-$font-size-huge:rem(50px);
-$font-size-big:rem(40px);
-$font-size-medium:rem(24px);
-$font-size-normal:rem(18px);
-$font-size-small:rem(16px);
-$font-size-tiny:rem(14px);
+$font-size-huge:50px;
+$font-size-big:40px;
+$font-size-medium:24px;
+$font-size-normal:18px;
+$font-size-small:16px;
+$font-size-tiny:14px;
 
 // Layout
 
-$layout-padding-mobile:rem(20px) ; 
-$layout-padding-desktop: rem(20px); 
+$layout-padding-mobile:20px ; 
+$layout-padding-desktop:0 20px 20px 30px; 

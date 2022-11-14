@@ -1,0 +1,25 @@
+.search-form {
+    display: flex;
+
+   width: 684px;
+
+    border: 1px solid #F3F3F8;
+
+    background-color: $white;
+    border-radius: 10px;
+
+    &__button {
+        border: none;
+        background-color: transparent;
+    }
+
+    &__input {
+        padding: 12px 14px;
+        width: 100%;
+
+        border: none;
+        border-radius: 10px;
+
+        outline: none;
+    }
+}

@@ -1,0 +1,35 @@
+.header {
+    display: flex;
+
+    &__column--one {
+        width: 336px;
+        padding-top: 20px;
+
+        background-color: $white;
+    }
+
+    &__circle-wrapper {
+        display: flex;
+    }
+
+    &__circle--red {
+        margin-right: 10px;
+    }
+
+    &__circle--yellow {
+        margin-right: 10px;
+    }
+
+    &__column--two {
+        display: flex;
+        align-items: center;
+
+        padding: 0 20px 0 20px;
+
+        background-color: $whisper;
+    }
+
+    &__search-form {
+        margin-right: 20px;
+    }
+}

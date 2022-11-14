@@ -4,9 +4,15 @@
 
 // Base
 
-@import "base/fonts";
+@import "base/_fonts";
 @import "base/generic";
 
 //  Components
 
+@import "blocks/_page-container";
+@import "blocks/_header";
+@import "blocks/circle";
+@import "blocks/logo";
+@import "blocks/search-form";
+@import "blocks/button";
 

@@ -1,0 +1,22 @@
+.circle{
+    display: block;
+
+    margin-bottom: 35px;
+
+    width: 20px;
+    height: 20px;
+
+    border-radius: 50%;
+
+    &--red{
+        background-color: $coral-red;
+    }
+
+    &--yellow{
+        background-color: $yellow-orange;  
+    }
+
+    &--green{
+        background-color: $screaming-green ;  
+    }
+}
