@@ -1,0 +1,38 @@
+// Colors
+$coral-red:#fd4343;
+$yellow-orange: #fdbe43;
+$screaming-green: #43fd6c;
+$royal-blue :#454eec;
+$nevada :#64696c;
+$shark: #1f1f20;
+$white:#ffffff;
+$whisper: #f9f9fc;
+$mint-green: #98f8a0;
+
+// Breakpoints
+$screen-tablet: '(min-width: 768px)';
+$screen-desktop: '(min-width: 1440px)';
+
+
+// Fonts
+$font-family-default: "Arial", "Helvetica", sans-serif;
+$font-family-custom: "NeueMontreal-Regular";
+
+$font-family: $font-family-custom, $font-family-default;
+
+
+
+$font-weight-regular:400;
+$font-weight-medium:500;
+
+$font-size-huge:rem(50px);
+$font-size-big:rem(40px);
+$font-size-medium:rem(24px);
+$font-size-normal:rem(18px);
+$font-size-small:rem(16px);
+$font-size-tiny:rem(14px);
+
+// Layout
+
+$layout-padding-mobile:rem(20px) ; 
+$layout-padding-desktop: rem(20px); 

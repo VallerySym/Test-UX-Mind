@@ -1,0 +1,20 @@
+@font-face {
+    $font-name: "NeueMontreal-Regular";
+    font-family: $font-family-custom;
+    font-weight: $font-weight-regular;
+    font-style: normal;
+    font-display: swap;
+    src: url("/source/fonts/NeueMontreal-Regular.woff") format("woff"),
+         url("/source/fonts/NeueMontreal-Regular.woff2") format("woff2");
+}
+
+@font-face {
+    $font-name: "NeueMontreal-Medium";
+    font-family: $font-family-custom;
+    font-weight: $font-weight-medium;
+    font-style: normal;
+    font-display: swap;
+    src: url("/source/fonts/NeueMontreal-Medium.woff") format("woff"),
+         url("/source/fonts/NeueMontreal-Medium.woff2") format("woff2");
+}
+
