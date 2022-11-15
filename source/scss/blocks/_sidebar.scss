@@ -1,0 +1,9 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 15px 26px 32px 26px;
+
+    background-color: $white;
+}

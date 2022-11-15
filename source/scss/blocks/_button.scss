@@ -1,13 +1,15 @@
 .button {
     border: none;
 
+    font-family: inherit;
+
     cursor: pointer;
 
-    &:hover{
+    &:hover {
         opacity: 0.5;
     }
-    
-    &:active{
+
+    &:active {
         opacity: 0.3;
     }
 
@@ -38,9 +40,85 @@
             background-color: $white;
         }
 
-        &::after{
+        &::after {
             transform: rotate(90deg)
         }
 
+    }
+
+    &--search {
+        width: 54px;
+        height: 54px;
+
+        border: none;
+        background-color: transparent;
+
+
+        background-image: url("/source/icons/search-form.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+
+    &--icon {
+        width: 30px;
+        height: 30px;
+
+        background-color: transparent;
+
+    }
+
+    &--unfilled {
+        position: relative;
+
+        padding: 0 30px;
+
+        background-color: transparent;
+
+        font-size: $font-size-small;
+        line-height: 100%;
+
+        color: $royal-blue;
+
+        &::after {
+            position: absolute;
+            content: "";
+
+            top: -1px;
+            right: 8px;
+
+            width: 13px;
+            height: 13px;
+
+            background-image: url("/source/icons/arrow-button-small.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+
+    &--unfilled-funnel{
+        &::before {
+            position: absolute;
+            content: "";
+
+            top: 0;
+            left: -4px;
+
+            width: 16px;
+            height: 16px;
+
+            background-image: url("/source/icons/funnel.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+
+    &--unfilled-arrow{
+
+        &::after {
+            right: 0;
+
+            background-image: url("/source/icons/arrow-button.svg");
+        }
     }
 }

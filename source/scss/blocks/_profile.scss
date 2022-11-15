@@ -1,0 +1,45 @@
+.profile {
+
+    &__button--chat {
+        position: relative;
+
+        margin-right: 22px;
+
+        background-image: url("/source/icons/profile-chat.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+
+        &::after {
+            position: absolute;
+            content: "";
+
+            width: 8px;
+            height: 8px;
+
+            top: 0;
+            right: 0;
+
+            border-radius: 50%;
+            background-color: $mint-green ;
+        }
+    }
+
+    &__button--edit {
+        margin-right: 22px;
+
+        background-image: url("/source/icons/profile-edit.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+
+    &__button--cabinet {
+        width:54px ;
+        height: 54px;
+
+        border-radius: 50%;
+        background-image: url("/source/images/profile-img.png");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}

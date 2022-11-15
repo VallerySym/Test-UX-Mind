@@ -1,0 +1,44 @@
+.card {
+    display: flex;
+    align-items: center;
+
+    min-width: 180px;
+
+    &:hover {
+        text-decoration: none;
+        opacity: 0.5;
+    }
+
+    &__wrapper {
+        padding: 0 0 0 5px;
+
+        &--large {
+            padding: 0 0 0 10px;
+            flex-grow: 1;
+        }
+    }
+
+    &__title {
+        margin-bottom: 14px;
+
+        font-size: $font-size-normal;
+        line-height: 22px;
+        color: $shark ;
+
+        &--large{
+            margin-bottom: 0;
+        }
+    }
+
+    &__info {
+        font-size: $font-size-tiny;
+        line-height: 17px;
+        color: $nevada;
+
+        &--large{
+            margin-bottom: 8px;
+        }
+    }
+
+
+}

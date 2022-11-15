@@ -9,6 +9,9 @@ $white:#ffffff;
 $whisper: #f9f9fc;
 $mint-green: #98f8a0;
 
+$color-text-light:$nevada;
+$color-text-dark:$shark;
+
 // Breakpoints
 $screen-tablet: '(min-width: 768px)';
 $screen-desktop: '(min-width: 1440px)';
@@ -32,7 +35,3 @@ $font-size-normal:18px;
 $font-size-small:16px;
 $font-size-tiny:14px;
 
-// Layout
-
-$layout-padding-mobile:20px ; 
-$layout-padding-desktop:0 20px 20px 30px; 

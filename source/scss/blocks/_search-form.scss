@@ -1,25 +1,27 @@
 .search-form {
+
     display: flex;
 
-   width: 684px;
+    width: 100%;
 
     border: 1px solid #F3F3F8;
 
     background-color: $white;
     border-radius: 10px;
 
-    &__button {
-        border: none;
-        background-color: transparent;
-    }
-
     &__input {
-        padding: 12px 14px;
+        padding: 12px 14px 12px 0;
         width: 100%;
 
         border: none;
         border-radius: 10px;
 
         outline: none;
+
+        &::placeholder {
+            font-family: inherit;
+            font-size: $font-size-normal;
+            line-height: 22px;
+        }
     }
 }
