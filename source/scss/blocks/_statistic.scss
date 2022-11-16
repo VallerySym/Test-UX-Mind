@@ -4,13 +4,19 @@
     &__container {
         position: relative;
 
+        width: 50%;
+
         display: flex;
         flex-direction: column;
 
-        padding: 34px 20px 30px 20px;
+        padding: 60px 20px 30px 20px;
 
         background-color: $whisper;
         border-radius: 16px 0 0 16px;
+
+        @media #{$screen-desktop}{
+            padding: 34px 20px 30px 20px;
+        }
     }
 
     &__container+&__container {
@@ -18,14 +24,17 @@
 
         border-radius: 0 16px 16px 0;
     }
+    
 
     &__percent {
         position: absolute;
         top: 29px;
         right: 18px;
+
+        font-size: $font-size-tiny ;
     }
 
-    &__termin {
+    &__termin { 
         margin-bottom: 10px;
 
         font-size: $font-size-small ;
@@ -33,7 +42,12 @@
     }
 
     &__description {
-        font-size: $font-size-big ;
-        line-height: 48px;
+        font-size: $font-size-normal; ;
+        line-height: 24px;
+
+        @media #{$screen-desktop}{
+            font-size: $font-size-big ;
+            line-height: 48px;
+        }
     }
 }

@@ -1,7 +1,16 @@
 .main {
-    display: flex;
+    padding-top: 30px;
 
     background-color: $whisper;
+
+
+    @media #{$screen-tablet} {
+        display: flex;
+
+        padding-top: 0;
+    }
+
+
 
     &__title {
         margin-bottom: 20px;
@@ -23,32 +32,63 @@
     }
 
     &__sidebar {
-        width: 23.5%;
+
+        @media #{$screen-tablet} {
+            min-width: 250px;
+        }
+
+        @media #{$screen-desktop} {
+            width: 23.1%;
+        }
+    }
+
+
+    &__center {
+        display: flex;
+        flex-direction: column;
+        padding: 7px 20px 20px 20px;
+
+        @media #{$screen-tablet} {
+            width: 100%;
+        }
+
+        @media #{$screen-desktop} {
+            width: 76.9%;
+        }
     }
 
     &__wrapper {
         display: flex;
+        flex-direction: column;
+
+        @media #{$screen-desktop} {
+            flex-direction: row;
+        }
+
     }
 
     &__content {
         display: flex;
         flex-direction: column;
 
-        margin-right: 20px;
+
+        @media #{$screen-desktop} {
+            margin-right: 20px;
+        }
+
+        &--right {
+            margin-right: 0;
+
+            @media #{$screen-desktop} {
+                width: 430px;
+
+            }
+        }
     }
 
-    &__content+&__content {
-        margin: 0;
-    }
-
-    &__center {
-
-        width: 76.5%;
-
-        padding: 20px;
-    }
 
     &__container {
+        width: 100%;
         padding: 20px;
         margin-bottom: 20px;
 
@@ -56,16 +96,13 @@
 
         border-radius: 10px;
 
+
         &--header {
             display: flex;
             justify-content: space-between;
             align-items: baseline;
         }
 
-    }
-
-    &__container+&__container{
-        margin: 0;
     }
 
     &__statistic {

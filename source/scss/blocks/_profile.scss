@@ -3,8 +3,6 @@
     &__button--chat {
         position: relative;
 
-        margin-right: 22px;
-
         background-image: url("/source/icons/profile-chat.svg");
         background-repeat: no-repeat;
         background-position: center;
@@ -22,24 +20,36 @@
             border-radius: 50%;
             background-color: $mint-green ;
         }
+
+        @media #{$screen-tablet} {
+            margin-right: 22px;
+        }
     }
 
     &__button--edit {
-        margin-right: 22px;
 
         background-image: url("/source/icons/profile-edit.svg");
         background-repeat: no-repeat;
         background-position: center;
 
+        @media #{$screen-tablet} {
+            margin-right: 22px;
+        }
+
     }
 
     &__button--cabinet {
-        width:54px ;
-        height: 54px;
+        width: 30px;
+        height: 30px;
 
         border-radius: 50%;
         background-image: url("/source/images/profile-img.png");
         background-repeat: no-repeat;
         background-position: center;
+
+        @media #{$screen-tablet} {
+            width: 54px;
+            height: 54px;
+        }
     }
 }

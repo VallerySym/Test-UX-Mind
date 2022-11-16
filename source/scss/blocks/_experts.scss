@@ -1,5 +1,25 @@
 .experts{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-}
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    @media #{$screen-desktop} {
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+
+    &__item{
+        margin-bottom: 10px;
+
+        @media #{$screen-desktop} {
+            margin-bottom: 0;
+
+            margin-right: 30px;
+        }
+
+        &:last-child{
+            margin: 0;
+        }
+    }
+} 

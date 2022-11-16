@@ -1,9 +1,51 @@
 .sidebar {
+    position: relative;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
-    padding: 15px 26px 32px 26px;
+    padding: 5px 26px 32px 26px;
 
     background-color: $white;
+
+    display: none;
+
+    @media #{$screen-tablet} {
+        display: block;
+    }
+
+    &__settings {
+       
+        padding-left: 20px;
+
+        @media #{$screen-tablet} {
+            padding-left: 0;
+        }
+    }
+
+    &__button {
+
+        padding: 15px 100px;
+        margin: 0 auto;
+        display: block;
+
+        @media #{$screen-tablet} {
+            display: none;
+        }
+
+        &--close {
+            position: absolute;
+            top: -33px;
+            right: 38px;
+
+            @media #{$screen-tablet} {
+                display: none;
+            }
+        }
+    }
+}
+
+.sidebar.is-open {
+    display: block;
 }

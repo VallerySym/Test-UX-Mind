@@ -1,11 +1,22 @@
 .header {
     display: flex;
+    flex-wrap: wrap;
+
+    @media #{$screen-desktop} {
+        flex-wrap: nowrap;
+        align-items: end;
+    }
 
     &__column--one {
-        width: 23.5%;
-        padding: 20px 0 0 30px;
+        padding: 20px 0 20px 30px;
+        margin-right: 31px;
 
-        background-color: $white;
+        @media #{$screen-desktop} {
+            width: 21%;
+
+            padding: 20px 0 30px 30px;
+        }
+
     }
 
     &__circle-wrapper {
@@ -24,11 +35,20 @@
         display: flex;
         align-items: center;
 
-        width: 55%;
+        padding: 20px;
 
-        padding: 66px 20px 8px 20px;
+        width: 100%;
+        order: 3;
 
-        background-color: $whisper;
+        @media #{$screen-desktop} {
+            width: 55%;
+            padding: 70px 10px 20px 20px;
+
+            order: 2;
+            flex-grow: 2;
+
+            background-color: $whisper;
+        }
     }
 
     &__search-form {
@@ -41,8 +61,16 @@
         justify-content: end;
         flex-grow: 1;
 
-        padding: 65px 20px 8px 20px;
-        
-        background-color: $whisper;
+
+        padding: 80px 20px 20px 0;
+
+        order: 2;
+
+        @media #{$screen-desktop} {
+            padding: 70px 20px 20px 10px;
+
+            background-color: $whisper;
+        }
+
     }
 }

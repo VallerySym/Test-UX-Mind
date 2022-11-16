@@ -1,4 +1,6 @@
 .button {
+    position: relative;
+
     border: none;
 
     font-family: inherit;
@@ -68,6 +70,39 @@
 
     }
 
+    &--sidebar{
+        background-color: $royal-blue;
+        color: $white;
+        border-radius: 8px;
+    }
+
+    &--close {
+        width: 20px;
+        height: 20px;
+
+        background-color: transparent;
+
+        &::before,
+        &::after {
+            position: absolute;
+            content: "";
+
+            top: 0;
+            right: 8px;
+
+            width: 2px;
+            height: 16px;
+
+            background-color: $royal-blue;
+
+            transform: rotate(45deg);
+        }
+
+        &::after {
+            transform: rotate(-45deg);
+        }
+    }
+
     &--unfilled {
         position: relative;
 
@@ -96,7 +131,7 @@
         }
     }
 
-    &--unfilled-funnel{
+    &--unfilled-funnel {
         &::before {
             position: absolute;
             content: "";
@@ -113,7 +148,7 @@
         }
     }
 
-    &--unfilled-arrow{
+    &--unfilled-arrow {
 
         &::after {
             right: 0;
