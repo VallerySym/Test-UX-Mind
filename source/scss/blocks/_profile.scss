@@ -3,7 +3,7 @@
     &__button--chat {
         position: relative;
 
-        background-image: url("/source/icons/profile-chat.svg");
+        background-image: url("../public/icons/profile-chat.svg");
         background-repeat: no-repeat;
         background-position: center;
 
@@ -28,7 +28,7 @@
 
     &__button--edit {
 
-        background-image: url("/source/icons/profile-edit.svg");
+        background-image: url("../public/icons/profile-edit.svg");
         background-repeat: no-repeat;
         background-position: center;
 
@@ -43,7 +43,7 @@
         height: 30px;
 
         border-radius: 50%;
-        background-image: url("/source/images/profile-img.png");
+        background-image: url("../public/images/profile-img.png");
         background-repeat: no-repeat;
         background-position: center;
 

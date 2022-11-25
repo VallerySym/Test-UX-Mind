@@ -56,7 +56,7 @@
         background-color: transparent;
 
 
-        background-image: url("/source/icons/search-form.svg");
+        background-image: url("../public/icons/search-form.svg");
         background-repeat: no-repeat;
         background-position: center;
 
@@ -125,7 +125,7 @@
             width: 13px;
             height: 13px;
 
-            background-image: url("/source/icons/arrow-button-small.svg");
+            background-image: url("../public/icons/arrow-button-small.svg");
             background-repeat: no-repeat;
             background-position: center;
         }
@@ -142,7 +142,7 @@
             width: 16px;
             height: 16px;
 
-            background-image: url("/source/icons/funnel.svg");
+            background-image: url("../public/icons/funnel.svg");
             background-repeat: no-repeat;
             background-position: center;
         }
@@ -153,7 +153,7 @@
         &::after {
             right: 0;
 
-            background-image: url("/source/icons/arrow-button.svg");
+            background-image: url("../public/icons/arrow-button.svg");
         }
     }
 }
