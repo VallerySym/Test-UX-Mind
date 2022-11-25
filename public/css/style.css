@@ -3,14 +3,14 @@
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-  src: url("../source/fonts/NeueMontreal-Regular.woff") format("woff"), url("../source/fonts/NeueMontreal-Regular.woff2") format("woff2"); }
+  src: url("../../public/fonts/NeueMontreal-Regular.woff") format("woff"), url("../../public/fonts/NeueMontreal-Regular.woff2") format("woff2"); }
 
 @font-face {
   font-family: "NeueMontreal-Regular";
   font-weight: 500;
   font-style: normal;
   font-display: swap;
-  src: url("../source/fonts/NeueMontreal-Medium.woff") format("woff"), url("../source/fonts/NeueMontreal-Medium.woff2") format("woff2"); }
+  src: url("../../public/fonts/NeueMontreal-Medium.woff") format("woff"), url("../../public/fonts/NeueMontreal-Medium.woff2") format("woff2"); }
 
 * {
   -webkit-box-sizing: border-box;
@@ -296,7 +296,7 @@ img {
     height: 54px;
     border: none;
     background-color: transparent;
-    background-image: url("../public/icons/search-form.svg");
+    background-image: url("../../public/icons/search-form.svg");
     background-repeat: no-repeat;
     background-position: center; }
   .button--icon {
@@ -340,7 +340,7 @@ img {
       right: 8px;
       width: 13px;
       height: 13px;
-      background-image: url("../public/icons/arrow-button-small.svg");
+      background-image: url("../../public/icons/arrow-button-small.svg");
       background-repeat: no-repeat;
       background-position: center; }
   .button--unfilled-funnel::before {
@@ -350,16 +350,16 @@ img {
     left: -4px;
     width: 16px;
     height: 16px;
-    background-image: url("../public/icons/funnel.svg");
+    background-image: url("../../public/icons/funnel.svg");
     background-repeat: no-repeat;
     background-position: center; }
   .button--unfilled-arrow::after {
     right: 0;
-    background-image: url("../public/icons/arrow-button.svg"); }
+    background-image: url("../../public/icons/arrow-button.svg"); }
 
 .profile__button--chat {
   position: relative;
-  background-image: url("../public/icons/profile-chat.svg");
+  background-image: url("../../public/icons/profile-chat.svg");
   background-repeat: no-repeat;
   background-position: center; }
   .profile__button--chat::after {
@@ -376,7 +376,7 @@ img {
       margin-right: 22px; } }
 
 .profile__button--edit {
-  background-image: url("../public/icons/profile-edit.svg");
+  background-image: url("../../public/icons/profile-edit.svg");
   background-repeat: no-repeat;
   background-position: center; }
   @media (min-width: 768px) {
@@ -387,7 +387,7 @@ img {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background-image: url("../public/images/profile-img.png");
+  background-image: url("../../public/images/profile-img.png");
   background-repeat: no-repeat;
   background-position: center; }
   @media (min-width: 768px) {
@@ -557,14 +557,14 @@ img {
       transform: translateY(-50%);
       width: 15px;
       height: 15px;
-      background-image: url("../public/icons/aside-arrow.svg");
+      background-image: url("../../public/icons/aside-arrow.svg");
       background-repeat: no-repeat; }
     .navigation__link--current {
       color: #454eec;
       background-color: #f9f9fc;
       border-radius: 10px; }
       .navigation__link--current::after {
-        background-image: url("../public/icons/aside-arrow-blue.svg"); }
+        background-image: url("../../public/icons/aside-arrow-blue.svg"); }
   .navigation__icon {
     margin-right: 19px; }
 
